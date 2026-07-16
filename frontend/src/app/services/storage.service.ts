@@ -16,9 +16,9 @@ export class StorageService {
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
     
-    // Auto-detect environment to switch between localhost and live render database api
+    // Auto-detect environment to switch between localhost and live Vercel database api
     if (this.isBrowser && window.location.hostname !== 'localhost') {
-      this.apiBaseUrl = 'https://harsh-portfolio-backend.onrender.com/api'; // Replace this with your actual Render API url
+      this.apiBaseUrl = 'https://harsh-portfolio-sja2.vercel.app/api';
     } else {
       this.apiBaseUrl = 'http://localhost:5000/api';
     }
