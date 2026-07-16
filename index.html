@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsh Gupta | Web, App & AI/ML Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Harsh Gupta, a B.Tech CSE (AI/ML) student and Web & App Developer specializing in Flutter, Python, React, and IoT.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header Nav -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">H.G</div>
+      <nav>
+        <ul>
+          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience-education">Experience</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="container-box">
+      <div class="box-header">
+        <h2 class="box-title">PORTFOLIO</h2>
+        <div class="hero-edition">
+          EDITION <span>05</span>
+        </div>
+      </div>
+      <div class="hero-body">
+        <div class="hero-content">
+          <h1 class="hero-title">Harsh Gupta</h1>
+          <p class="hero-subtitle">Web & App Developer</p>
+          <p class="hero-desc">
+            I am a B.Tech CSE (Artificial Intelligence and Machine Learning) student and developer skilled in Python, React, and Flutter. I specialize in building user-centric web/mobile apps, integrating APIs, and managing projects from development to deployment.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="margin-left: 2px;">
+                <path d="M1 7H13M13 7L7 1M13 7L7 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+
+          <!-- Hero Stats Counters -->
+          <div class="hero-stats" style="display: flex; gap: 2rem; margin-top: 2.5rem; border-top: 1px dashed var(--border-color); padding-top: 1.5rem; flex-wrap: wrap;">
+            <div class="stat-item">
+              <div style="display: flex; align-items: baseline;">
+                <h3 class="counter" data-target="15" style="font-size: 2.5rem; font-family: var(--font-serif); font-weight: 800; line-height: 1;">0</h3>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-yellow);">+</span>
+              </div>
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-top: 0.25rem;">Bugs Resolved</p>
+            </div>
+            
+            <div class="stat-item">
+              <div style="display: flex; align-items: baseline;">
+                <h3 class="counter" data-target="3" style="font-size: 2.5rem; font-family: var(--font-serif); font-weight: 800; line-height: 1;">0</h3>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-yellow);">+</span>
+              </div>
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-top: 0.25rem;">Apps Delivered</p>
+            </div>
+            
+            <div class="stat-item">
+              <div style="display: flex; align-items: baseline;">
+                <h3 class="counter" data-target="87" style="font-size: 2.5rem; font-family: var(--font-serif); font-weight: 800; line-height: 1;">0</h3>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-yellow);">%</span>
+              </div>
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-top: 0.25rem;">ML Accuracy</p>
+            </div>
+
+            <div class="stat-item">
+              <div style="display: flex; align-items: baseline;">
+                <h3 class="counter" data-target="100" style="font-size: 2.5rem; font-family: var(--font-serif); font-weight: 800; line-height: 1;">0</h3>
+                <span style="font-size: 1.5rem; font-weight: 800; color: var(--accent-yellow);">%</span>
+              </div>
+              <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-top: 0.25rem;">On-time Delivery</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-divider"></div>
+        <div class="hero-visual">
+          <div class="yellow-circle"
+            style="overflow: hidden; display: flex; align-items: center; justify-content: center;">
+            <img src="profile.jpg" alt="Harsh Gupta" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section id="projects" class="container-box">
+      <div class="box-header">
+        <h2 class="box-title">SELECTED PROJECTS</h2>
+        <div class="projects-header-controls">
+          <span class="header-indicator active">01</span>
+          <span class="header-indicator">02</span>
+          <span class="header-indicator">03</span>
+          <span class="header-indicator">04</span>
+        </div>
+      </div>
+
+      <!-- Grid of Projects -->
+      <div class="projects-grid" style="padding: 2rem;">
+
+        <!-- Project 01: Ekaksh Pharma -->
+        <article class="project-card">
+          <div class="card-mockup-wrapper">
+            <span class="card-number-tag">01</span>
+            <!-- SVG Mockup: Ekaksh Pharma Healthcare Portal -->
+            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="240" height="180" rx="4" fill="#E2F5EE" />
+
+              <!-- Medical cross watermark background -->
+              <path d="M180 50 H200 V70 H220 V90 H200 V110 H180 V90 H160 V70 H180 Z" fill="#FAF6F0" fill-opacity="0.5"
+                stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3" />
+
+              <!-- Dashboard mockup (Left column) -->
+              <g transform="translate(15, 15)">
+                <rect width="130" height="150" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5" />
+
+                <!-- Search bar -->
+                <rect x="8" y="10" width="114" height="16" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+                <line x1="16" y1="18" x2="64" y2="18" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" />
+
+                <!-- Pill medicine card 1 -->
+                <rect x="8" y="34" width="114" height="34" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+                <circle cx="25" cy="51" r="11" fill="#E2F5EE" stroke="#1A1A1A" stroke-width="1" />
+                <!-- Capsule SVG inside circle -->
+                <rect x="21" y="46" width="8" height="10" rx="4" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="15" y1="51" x2="35" y2="51" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="1 1" />
+
+                <line x1="44" y1="44" x2="90" y2="44" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="44" y1="53" x2="110" y2="53" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round" />
+
+                <!-- Pill medicine card 2 -->
+                <rect x="8" y="74" width="114" height="34" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+                <circle cx="25" cy="91" r="11" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1" />
+                <line x1="44" y1="84" x2="80" y2="84" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" />
+                <line x1="44" y1="93" x2="105" y2="93" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round" />
+
+                <!-- Navigation tabs or footer inside app -->
+                <rect x="8" y="122" width="114" height="20" rx="3" fill="#1A1A1A" />
+                <line x1="20" y1="132" x2="45" y2="132" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="60" y1="132" x2="80" y2="132" stroke="#FAF6F0" stroke-width="1.5" stroke-linecap="round"
+                  stroke-opacity="0.6" />
+                <line x1="95" y1="132" x2="110" y2="132" stroke="#FAF6F0" stroke-width="1.5" stroke-linecap="round"
+                  stroke-opacity="0.6" />
+              </g>
+
+              <!-- Admin panel preview (Right column - overlapping) -->
+              <g transform="translate(125, 45)">
+                <rect width="95" height="110" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"
+                  filter="drop-shadow(4px 4px 0px rgba(26,26,26,0.15))" />
+                <rect x="0" y="0" width="95" height="20" rx="4" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1.2" />
+                <circle cx="10" cy="10" r="3" fill="#1A1A1A" />
+                <circle cx="20" cy="10" r="3" fill="#1A1A1A" />
+
+                <!-- CRUD form fields -->
+                <line x1="10" y1="34" x2="40" y2="34" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+                <rect x="10" y="44" width="75" height="12" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="15" y1="50" x2="45" y2="50" stroke="#1A1A1A" stroke-width="1" />
+
+                <!-- Save Button -->
+                <rect x="10" y="75" width="75" height="18" rx="3" fill="#1A1A1A" />
+                <line x1="30" y1="84" x2="55" y2="84" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+              </g>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3 class="project-title">Ekaksh Pharma</h3>
+            <p class="project-desc">A medicine information portal and inventory system built for doctors. Features
+              detail lookups and a complete CRUD admin panel to manage pharma product data.</p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">CSS</span>
+            </div>
+            <a href="https://www.ekakshpharma.in/" target="_blank" class="btn btn-secondary"
+              style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;">Visit Website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 02: iSupport -->
+        <article class="project-card">
+          <div class="card-mockup-wrapper">
+            <span class="card-number-tag">02</span>
+            <!-- SVG Mockup: iSupport Poster Generator -->
+            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="240" height="180" rx="4" fill="#FFE5D9" />
+
+              <!-- Main generator layout -->
+              <g transform="translate(15, 10)">
+                <rect width="135" height="160" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5" />
+                <rect x="0" y="0" width="135" height="24" rx="6" fill="#1A1A1A" />
+                <!-- Logo inside app -->
+                <line x1="12" y1="12" x2="48" y2="12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+
+                <!-- App interactive screen -->
+                <!-- Multi-lingual selector -->
+                <rect x="8" y="32" width="119" height="16" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="16" y1="40" x2="30" y2="40" stroke="#1A1A1A" stroke-width="1.8" />
+                <line x1="44" y1="40" x2="68" y2="40" stroke="#CCCCCC" stroke-width="1.2" />
+                <line x1="82" y1="40" x2="108" y2="40" stroke="#CCCCCC" stroke-width="1.2" />
+
+                <!-- Canvas Image Poster preview -->
+                <rect x="8" y="56" width="119" height="74" rx="4" fill="#FFE5D9" stroke="#1A1A1A" stroke-width="1" />
+
+                <!-- Circular user frame inside canvas -->
+                <circle cx="68" cy="88" r="22" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" />
+                <!-- Avatar head and shoulders -->
+                <circle cx="68" cy="83" r="7" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+                <path d="M52 105 C52 98, 60 94, 68 94 C76 94, 84 98, 84 105 Z" fill="#1A1A1A" stroke="#1A1A1A"
+                  stroke-width="0.8" clip-path="url(#avatar-clip)" />
+
+                <!-- Text inside canvas mockup -->
+                <rect x="25" y="116" width="86" height="10" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.6" />
+                <line x1="32" y1="121" x2="104" y2="121" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" />
+
+                <!-- Share options buttons -->
+                <rect x="8" y="138" width="55" height="14" rx="2" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="18" y1="145" x2="48" y2="145" stroke="#1A1A1A" stroke-width="1.2" />
+
+                <rect x="72" y="138" width="55" height="14" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="82" y1="145" x2="112" y2="145" stroke="#1A1A1A" stroke-width="1.2" />
+              </g>
+
+              <!-- WhatsApp / Share Overlay Panel (Right offset) -->
+              <g transform="translate(160, 45)">
+                <rect width="65" height="90" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"
+                  filter="drop-shadow(4px 4px 0px rgba(26,26,26,0.15))" />
+                <!-- Social Share Icons simulated -->
+                <circle cx="20" cy="25" r="8" fill="#1A1A1A" />
+                <path d="M18 25 L22 25 M20 22 L20 28" stroke="#FFFFFF" stroke-width="1" />
+                <line x1="34" y1="25" x2="52" y2="25" stroke="#1A1A1A" stroke-width="1.5" />
+
+                <circle cx="20" cy="45" r="8" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="34" y1="45" x2="52" y2="45" stroke="#1A1A1A" stroke-width="1.5" />
+
+                <circle cx="20" cy="65" r="8" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+                <line x1="34" y1="65" x2="52" y2="65" stroke="#1A1A1A" stroke-width="1.5" />
+              </g>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3 class="project-title">iSupport Campaign</h3>
+            <p class="project-desc">A web Campaign Poster Generator SPA enabling dynamic poster framing with HTML5
+              Canvas, real-time customization, multi-language inputs (Hindi, Gujarati), and direct social sharing.</p>
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Vite</span>
+              <span class="tag">Canvas API</span>
+              <span class="tag">Stateflow</span>
+            </div>
+            <a href="https://isupport-three.vercel.app/templates" target="_blank" class="btn btn-secondary"
+              style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;">Visit Website ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 03: Boutique E-Commerce Website -->
+        <article class="project-card">
+          <div class="card-mockup-wrapper">
+            <span class="card-number-tag">03</span>
+            <!-- SVG Mockup: Boutique E-Commerce Website -->
+            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="240" height="180" rx="4" fill="#FBF0F0"/>
+              
+              <!-- Desktop / Web mockup background -->
+              <g transform="translate(25, 20)">
+                <rect width="190" height="140" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+                <rect x="0" y="0" width="190" height="16" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1.2"/>
+                <!-- Browser dots -->
+                <circle cx="8" cy="8" r="2.5" fill="#1A1A1A"/>
+                <circle cx="16" cy="8" r="2.5" fill="#1A1A1A"/>
+                <line x1="32" y1="8" x2="90" y2="8" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+                
+                <!-- Cart count -->
+                <rect x="160" y="3" width="22" height="10" rx="2" fill="#1A1A1A"/>
+                <circle cx="166" cy="8" r="1.5" fill="#FFFFFF"/>
+                
+                <!-- Main grid items (clothing cards) -->
+                <!-- Grid Card 1 -->
+                <g transform="translate(10, 26)">
+                  <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+                  <!-- Clothing Icon T-shirt outline -->
+                  <path d="M15 45 L20 40 L25 43 L30 40 L35 45 L35 55 L15 55 Z" stroke="#1A1A1A" stroke-width="1" stroke-linejoin="round" fill="#FFFFFF"/>
+                  <rect x="15" y="38" width="20" height="18" rx="2" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+                  
+                  <line x1="6" y1="62" x2="38" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+                  <line x1="6" y1="70" x2="25" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+                  <!-- Price tag -->
+                  <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.5"/>
+                </g>
+
+                <!-- Grid Card 2 -->
+                <g transform="translate(70, 26)">
+                  <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+                  <!-- Clothing Icon Jacket outline -->
+                  <rect x="17" y="38" width="16" height="18" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1"/>
+                  <line x1="25" y1="38" x2="25" y2="56" stroke="#1A1A1A" stroke-width="1"/>
+                  
+                  <line x1="6" y1="62" x2="44" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+                  <line x1="6" y1="70" x2="30" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+                  <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.5"/>
+                </g>
+
+                <!-- Grid Card 3 -->
+                <g transform="translate(130, 26)">
+                  <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+                  <!-- Dress shape -->
+                  <path d="M20 38 L30 38 L34 56 L16 56 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="1"/>
+                  <line x1="6" y1="62" x2="40" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+                  <line x1="6" y1="70" x2="22" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+                  <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0.5"/>
+                </g>
+                
+                <!-- Bottom filter bars -->
+                <rect x="10" y="118" width="170" height="14" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8"/>
+                <line x1="16" y1="125" x2="46" y2="125" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="60" y1="125" x2="90" y2="125" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3 class="project-title">Boutique E-Commerce Website</h3>
+            <p class="project-desc">A responsive multi-page e-commerce website featuring a complete product catalog, custom shopping cart, secure authentication system, and order tracking.</p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Authentication</span>
+            </div>
+            <a href="https://github.com/Harshjii" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;">View Code ↗</a>
+          </div>
+        </article>
+
+        <!-- Project 04: Smart Garbage Segregation System -->
+        <article class="project-card">
+          <div class="card-mockup-wrapper">
+            <span class="card-number-tag">04</span>
+            <!-- SVG Mockup: Smart Garbage Segregation System -->
+            <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="240" height="180" rx="4" fill="#DFF0E2"/>
+              <!-- Decorative circuit lines -->
+              <path d="M20 20 H80 V60" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3"/>
+              <path d="M220 160 H160 V120" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3"/>
+              
+              <!-- Left Bin: Organic (Green) -->
+              <g transform="translate(45, 60)">
+                <rect x="0" y="10" width="40" height="60" rx="3" fill="#E2F5EE" stroke="#1A1A1A" stroke-width="1.5"/>
+                <!-- Lid -->
+                <rect x="-4" y="2" width="48" height="8" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+                <rect x="14" y="-4" width="12" height="6" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+                <!-- Recycle Icon (Simplified) -->
+                <path d="M12 35 L20 25 L28 35 Z" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+                <line x1="20" y1="25" x2="20" y2="45" stroke="#1A1A1A" stroke-width="1"/>
+              </g>
+              
+              <!-- Right Bin: Plastic (Blue) -->
+              <g transform="translate(105, 60)">
+                <rect x="0" y="10" width="40" height="60" rx="3" fill="#D2ECF9" stroke="#1A1A1A" stroke-width="1.5"/>
+                <!-- Lid -->
+                <rect x="-4" y="2" width="48" height="8" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+                <rect x="14" y="-4" width="12" height="6" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+                <!-- Recycle Icon (Simplified) -->
+                <circle cx="20" cy="35" r="8" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+                <line x1="15" y1="35" x2="25" y2="35" stroke="#1A1A1A" stroke-width="1"/>
+              </g>
+              
+              <!-- Sensors & Camera mockup overlay (top center) -->
+              <g transform="translate(90, 15)">
+                <rect width="60" height="24" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5" filter="drop-shadow(2px 2px 0px rgba(0,0,0,0.1))"/>
+                <circle cx="16" cy="12" r="5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1"/>
+                <circle cx="16" cy="12" r="1.5" fill="#1A1A1A"/>
+                <line x1="34" y1="12" x2="48" y2="12" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+                <!-- Pulse waves -->
+                <path d="M12 28 C 16 32, 20 32, 24 28" stroke="#1A1A1A" stroke-width="1" fill="none"/>
+              </g>
+              
+              <!-- LCD Feedback Screen (Bottom) -->
+              <g transform="translate(60, 130)">
+                <rect width="120" height="30" rx="3" fill="#1A1A1A"/>
+                <text x="12" y="19" fill="#FFC55A" font-family="Courier New, monospace" font-weight="bold" font-size="10">STATUS: PLASTIC</text>
+                <circle cx="105" cy="15" r="3" fill="#00FF00"/>
+              </g>
+            </svg>
+          </div>
+          <div class="card-info">
+            <h3 class="project-title">Smart Garbage Segregation System</h3>
+            <p class="project-desc">An IoT + ML hybrid system classifying waste types in real time using ultrasonic/IR sensors and a trained classifier, achieving 87% accuracy.</p>
+            <div class="project-tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">Python</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Sensors</span>
+            </div>
+            <a href="https://github.com/Harshjii" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;">View Code ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Center footer button -->
+      <div class="projects-footer">
+        <a href="#projects" class="btn btn-secondary" style="font-family: var(--font-serif); font-weight: 700;">View All
+          Projects</a>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience-education" class="container-box">
+      <div class="box-header">
+        <h2 class="box-title">EXPERIENCE & EDUCATION</h2>
+      </div>
+      <div class="xp-edu-body">
+        <!-- Left side: Experience -->
+        <div class="xp-section">
+          <h3 class="section-subtitle">WORK EXPERIENCE</h3>
+          
+          <div class="xp-item">
+            <div class="xp-header">
+              <h4 class="xp-title">App Development Intern</h4>
+              <span class="xp-date">Aug 2024 – Aug 2025</span>
+            </div>
+            <div class="xp-company">SARAI | Remote</div>
+            <ul class="xp-bullets">
+              <li>Built and deployed cross-platform Flutter apps with REST API & Firebase integration, improving app load time by ~20% via Provider-based state management.</li>
+              <li>Collaborated in Agile sprints with design, backend, and QA teams; resolved 15+ critical bugs pre-launch and supported Google Play deployment.</li>
+            </ul>
+          </div>
+          
+          <div class="xp-item">
+            <div class="xp-header">
+              <h4 class="xp-title">Freelance Software Developer</h4>
+              <span class="xp-date">2023 – Present</span>
+            </div>
+            <div class="xp-company">Self-Employed | Remote</div>
+            <ul class="xp-bullets">
+              <li>Delivered 3+ Flutter apps and responsive websites for retail/hospitality clients — including an end-to-end e-commerce platform with auth, cart, and order management.</li>
+              <li>Managed full project lifecycle — requirements, development, testing, deployment, and post-launch support — achieving 100% on-time delivery.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Right side: Education & Certifications -->
+        <div class="edu-section">
+          <h3 class="section-subtitle">EDUCATION</h3>
+          
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4 class="edu-title">B.Tech – Computer Science & Engineering (AI & ML)</h4>
+              <span class="edu-date">2023 – 2027</span>
+            </div>
+            <div class="edu-school">GL Bajaj Group of Institutions, Mathura, UP</div>
+            <div class="edu-meta">Dr. A.P.J. Abdul Kalam Technical University | <strong>CGPA: 6.89</strong></div>
+          </div>
+          
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4 class="edu-title">Class XII (CBSE)</h4>
+              <span class="edu-date">2023</span>
+            </div>
+            <div class="edu-meta">Score: <strong>74%</strong></div>
+          </div>
+          
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4 class="edu-title">Class X (CBSE)</h4>
+              <span class="edu-date">2021</span>
+            </div>
+            <div class="edu-meta">Score: <strong>93%</strong></div>
+          </div>
+          
+          <h3 class="section-subtitle" style="margin-top: 2rem;">CERTIFICATIONS & AWARDS</h3>
+          <ul class="awards-list">
+            <li><strong>ISRO (IIRS) Certified:</strong> AI/ML Model for Crop Acreage Mapping Workshop (2025)</li>
+            <li><strong>Top 10 Finalist:</strong> Microsoft Hackathon (2025)</li>
+            <li><strong>Top 6 Finalist:</strong> Zero to Hero Hackathon by Chandigarh University (2025)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container-box">
+      <div class="box-header">
+        <h2 class="box-title">ABOUT ME</h2>
+      </div>
+      <div class="about-body">
+        <!-- Left details -->
+        <div class="about-left">
+          <p class="about-bio">
+            I'm a web and app developer with a passion for creating high-performance, user-centered digital experiences
+            using modern frameworks and technologies.
+          </p>
+          <p class="about-desc">
+            With experience across React, Flutter, Python, and the MEAN stack, I bridge the gap between frontend
+            aesthetics and backend architecture. I believe in clean code, robust database designs, and building digital
+            solutions that solve real business operational challenges.
+          </p>
+          <p class="about-desc">
+            My approach combines full-stack development skills with intuitive design patterns, ensuring that the
+            applications I create are scalable, accessible, and fast. I enjoy building systems like custom e-commerce
+            stores, healthcare portals, poster generators, and billing dashboards.
+          </p>
+
+          <div class="location-box">
+            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="margin-top:-2px;">
+              <path
+                d="M7 9C8.10457 9 9 8.10457 9 7C9 5.89543 8.10457 5 7 5C5.89543 5 5 5.89543 5 7C5 8.10457 5.89543 9 7 9Z"
+                stroke="#1A1A1A" stroke-width="1.5" stroke-linejoin="round" />
+              <path
+                d="M7 17C10.5 13 13 10.3125 13 7C13 3.6875 10.3125 1 7 1C3.6875 1 1 3.6875 1 7C1 10.3125 3.5 13 7 17Z"
+                stroke="#1A1A1A" stroke-width="1.5" stroke-linejoin="round" />
+            </svg>
+            INDIA
+          </div>
+        </div>
+
+        <!-- Right expertise list -->
+        <div class="about-right">
+          <div class="expertise-section">
+            <h3 class="section-subtitle">MY EXPERTISE</h3>
+
+            <div class="expertise-list">
+              <!-- Item 1 -->
+              <div class="expertise-item">
+                <h4 class="expertise-title"><span>①</span> Frontend Development</h4>
+                <p class="expertise-desc">Building responsive, modern Single Page Applications (SPAs) with React,
+                  TypeScript, and Tailwind.</p>
+              </div>
+              <!-- Item 2 -->
+              <div class="expertise-item">
+                <h4 class="expertise-title"><span>②</span> Mobile Development</h4>
+                <p class="expertise-desc">Creating cross-platform mobile apps using Flutter and React Native for iOS
+                  and/or Android.</p>
+              </div>
+              <!-- Item 3 -->
+              <div class="expertise-item">
+                <h4 class="expertise-title"><span>③</span> Full Stack Systems</h4>
+                <p class="expertise-desc">Developing robust APIs and dashboards with the MEAN stack, Firebase, and
+                  Python scripts.</p>
+              </div>
+              <!-- Item 4 -->
+              <div class="expertise-item">
+                <h4 class="expertise-title"><span>④</span> Canvas & Graphics</h4>
+                <p class="expertise-desc">Implementing client-side image operations using HTML5 Canvas API and dynamic
+                  SVG rendering.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-section">
+            <h3 class="section-subtitle" style="margin-bottom: 1.25rem;">TOOLS & SKILLS</h3>
+            <div class="skills-cloud">
+              <span class="tag">Flutter</span>
+              <span class="tag">Dart</span>
+              <span class="tag">Python</span>
+              <span class="tag">React</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Scikit-learn</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Firestore</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Android Studio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's Work Together Box -->
+    <section id="contact" class="container-box">
+      <div class="box-header">
+        <h2 class="box-title">LET'S WORK TOGETHER</h2>
+        <span class="hire-badge">AVAILABLE FOR HIRE</span>
+      </div>
+      <div class="contact-body">
+        <p class="contact-text">
+          I'm currently available for freelance projects, full-time positions, and consulting work.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:harsh.gupta2023@glbajajgroup.org" class="btn btn-primary">
+            <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="margin-top:-1px;">
+              <path d="M1 1L9 7.5L17 1M1 13H17V1H1V13Z" stroke="currentColor" stroke-width="1.8"
+                stroke-linejoin="round" />
+            </svg>
+            harsh.gupta2023@glbajajgroup.org
+          </a>
+          <a href="resume.pdf" class="btn btn-secondary download-btn" target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="copyright">
+        © 2026 HARSH GUPTA. ALL RIGHTS RESERVED.
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/Harshjii" target="_blank" class="social-circle" aria-label="Github">
+          <!-- Github logo circle -->
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-gupta-972593306/" target="_blank" class="social-circle"
+          aria-label="LinkedIn">
+          <!-- LinkedIn logo circle -->
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 1.25C0 0.56 0.56 0 1.25 0H14.75C15.44 0 16 0.56 16 1.25V14.75C16 15.44 15.44 16 14.75 16H1.25C0.56 16 0 15.44 0 14.75V1.25ZM4.8 13.6V5.6H2.4V13.6H4.8ZM3.6 4.6C4.4 4.6 5 4 5 3.2C5 2.4 4.4 1.8 3.6 1.8C2.8 1.8 2.2 2.4 2.2 3.2C2.2 4 2.8 4.6 3.6 4.6ZM13.8 13.6V9.2C13.8 7 12.6 6 11 6C9.6 6 9 6.8 8.6 7.4V5.6H6.2C6.2 6.4 6.2 13.6 6.2 13.6H8.6V9.4C8.6 9.2 8.6 9 8.6 8.8C8.8 8.4 9.2 8 9.8 8C10.6 8 11 8.6 11 9.6V13.6H13.8Z" />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/a.x.lgameharsh8/" target="_blank" class="social-circle"
+          aria-label="Instagram">
+          <!-- Instagram logo circle -->
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 0C5.827 0 5.555.01 4.702.048c-.85.039-1.432.174-1.94.372a3.9 3.9 0 0 0-1.41.92 3.9 3.9 0 0 0-.92 1.41c-.198.508-.333 1.09-.372 1.94C.01 5.555 0 5.827 0 8s.01 2.445.048 3.298c.039.85.174 1.432.372 1.94a3.9 3.9 0 0 0 .92 1.41 3.9 3.9 0 0 0 1.41.92c.508.198 1.09.333 1.94.372C5.555 15.99 5.827 16 8 16s2.445-.01 3.298-.048c.85-.039 1.432-.174 1.94-.372a3.9 3.9 0 0 0 1.41-.92 3.9 3.9 0 0 0 .92-1.41c.198-.508.333-1.09.372-1.94C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.298c-.039-.85-.174-1.432-.372-1.94a3.9 3.9 0 0 0-.92-1.41 3.9 3.9 0 0 0-1.41-.92c-.508-.198-1.09-.333-1.94-.372C10.445.01 10.173 0 8 0zm0 1.44c2.136 0 2.39.008 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.282.24.705.275 1.485.039.844.047 1.097.047 3.233s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.282.11-.705.24-1.485.276-.844.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.238-.705-.276-1.484-.038-.844-.046-1.096-.046-3.233s.008-2.39.046-3.233c.036-.78.166-1.203.276-1.485.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.844-.038 1.097-.046 3.233-.046zm0 2.44a4.12 4.12 0 1 0 0 8.24 4.12 4.12 0 0 0 0-8.24zm0 6.8a2.68 2.68 0 1 1 0-5.36 2.68 2.68 0 0 1 0 5.36zm4.285-7.725a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

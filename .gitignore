@@ -1,0 +1,27 @@
+# Node dependencies
+portfolio/node_modules/
+node_modules/
+
+# Angular build and cache outputs
+portfolio/.angular/
+portfolio/dist/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Agent system folders
+.agents/
+.gemini/
+walkthrough.md
+task.md
+implementation_plan.md

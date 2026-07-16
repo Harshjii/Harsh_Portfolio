@@ -1,0 +1,24 @@
+<header>
+  <div class="nav-container">
+    <div class="logo">H.G</div>
+    <nav>
+      <ul>
+        <li [class.active]="activeSection() === 'home'">
+          <a href="#home" (click)="scrollToSection('home', $event)">Home</a>
+        </li>
+        <li [class.active]="activeSection() === 'projects'">
+          <a href="#projects" (click)="scrollToSection('projects', $event)">Projects</a>
+        </li>
+        <li [class.active]="activeSection() === 'experience-education'">
+          <a href="#experience-education" (click)="scrollToSection('experience-education', $event)">Experience</a>
+        </li>
+        <li [class.active]="activeSection() === 'about'">
+          <a href="#about" (click)="scrollToSection('about', $event)">About</a>
+        </li>
+        <li [class.active]="activeSection() === 'contact'">
+          <a href="#contact" (click)="scrollToSection('contact', $event)">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>

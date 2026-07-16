@@ -1,0 +1,320 @@
+<section id="projects" class="container-box">
+  <div class="box-header">
+    <h2 class="box-title">SELECTED PROJECTS</h2>
+    <div class="projects-header-controls">
+      <span class="header-indicator active">01</span>
+      <span class="header-indicator">02</span>
+      <span class="header-indicator">03</span>
+      <span class="header-indicator">04</span>
+    </div>
+  </div>
+
+  <!-- Grid of Projects -->
+  <div class="projects-grid" style="padding: 2rem;">
+
+    <!-- Project 01: Ekaksh Pharma -->
+    <article class="project-card">
+      <div class="card-mockup-wrapper">
+        <span class="card-number-tag">01</span>
+        <!-- SVG Mockup: Ekaksh Pharma Healthcare Portal -->
+        <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="240" height="180" rx="4" fill="#E2F5EE" />
+
+          <!-- Medical cross watermark background -->
+          <path d="M180 50 H200 V70 H220 V90 H200 V110 H180 V90 H160 V70 H180 Z" fill="#FAF6F0" fill-opacity="0.5"
+            stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3" />
+
+          <!-- Dashboard mockup (Left column) -->
+          <g transform="translate(15, 15)">
+            <rect width="130" height="150" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width.5="1.5" stroke-width="1.5" />
+
+            <!-- Search bar -->
+            <rect x="8" y="10" width="114" height="16" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+            <line x1="16" y1="18" x2="64" y2="18" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" />
+
+            <!-- Pill medicine card 1 -->
+            <rect x="8" y="34" width="114" height="34" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+            <circle cx="25" cy="51" r="11" fill="#E2F5EE" stroke="#1A1A1A" stroke-width="1" />
+            <!-- Capsule SVG inside circle -->
+            <rect x="21" y="46" width="8" height="10" rx="4" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="15" y1="51" x2="35" y2="51" stroke="#1A1A1A" stroke-width="0.5" stroke-dasharray="1 1" />
+
+            <line x1="44" y1="44" x2="90" y2="44" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" />
+            <line x1="44" y1="53" x2="110" y2="53" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round" />
+
+            <!-- Pill medicine card 2 -->
+            <rect x="8" y="74" width="114" height="34" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1" />
+            <circle cx="25" cy="91" r="11" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1" />
+            <line x1="44" y1="84" x2="80" y2="84" stroke="#1A1A1A" stroke-width="1.8" stroke-linecap="round" />
+            <line x1="44" y1="93" x2="105" y2="93" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round" />
+
+            <!-- Navigation tabs or footer inside app -->
+            <rect x="8" y="122" width="114" height="20" rx="3" fill="#1A1A1A" />
+            <line x1="20" y1="132" x2="45" y2="132" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+            <line x1="60" y1="132" x2="80" y2="132" stroke="#FAF6F0" stroke-width="1.5" stroke-linecap="round"
+              stroke-opacity="0.6" />
+            <line x1="95" y1="132" x2="110" y2="132" stroke="#FAF6F0" stroke-width="1.5" stroke-linecap="round"
+              stroke-opacity="0.6" />
+          </g>
+
+          <!-- Admin panel preview (Right column - overlapping) -->
+          <g transform="translate(125, 45)">
+            <rect width="95" height="110" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"
+              filter="drop-shadow(4px 4px 0px rgba(26,26,26,0.15))" />
+            <rect x="0" y="0" width="95" height="20" rx="4" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1.2" />
+            <circle cx="10" cy="10" r="3" fill="#1A1A1A" />
+            <circle cx="20" cy="10" r="3" fill="#1A1A1A" />
+
+            <!-- CRUD form fields -->
+            <line x1="10" y1="34" x2="40" y2="34" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round" />
+            <rect x="10" y="44" width="75" height="12" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="15" y1="50" x2="45" y2="50" stroke="#1A1A1A" stroke-width="1" />
+
+            <!-- Save Button -->
+            <rect x="10" y="75" width="75" height="18" rx="3" fill="#1A1A1A" />
+            <line x1="30" y1="84" x2="55" y2="84" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" />
+          </g>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h3 class="project-title">Ekaksh Pharma</h3>
+        <p class="project-desc">A medicine information portal and inventory system built for doctors. Features
+          detail lookups and a complete CRUD admin panel to manage pharma product data.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">CSS</span>
+        </div>
+        <a href="https://www.ekakshpharma.in/" target="_blank" class="btn btn-secondary"
+          style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;" (click)="trackClick('Ekaksh Pharma')">Visit Website ↗</a>
+      </div>
+    </article>
+
+    <!-- Project 02: iSupport -->
+    <article class="project-card">
+      <div class="card-mockup-wrapper">
+        <span class="card-number-tag">02</span>
+        <!-- SVG Mockup: iSupport Poster Generator -->
+        <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="240" height="180" rx="4" fill="#FFE5D9" />
+
+          <!-- Main generator layout -->
+          <g transform="translate(15, 10)">
+            <rect width="135" height="160" rx="6" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5" />
+            <rect x="0" y="0" width="135" height="24" rx="6" fill="#1A1A1A" />
+            <!-- Logo inside app -->
+            <line x1="12" y1="12" x2="48" y2="12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+
+            <!-- App interactive screen -->
+            <!-- Multi-lingual selector -->
+            <rect x="8" y="32" width="119" height="16" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="16" y1="40" x2="30" y2="40" stroke="#1A1A1A" stroke-width="1.8" />
+            <line x1="44" y1="40" x2="68" y2="40" stroke="#CCCCCC" stroke-width="1.2" />
+            <line x1="82" y1="40" x2="108" y2="40" stroke="#CCCCCC" stroke-width="1.2" />
+
+            <!-- Canvas Image Poster preview -->
+            <rect x="8" y="56" width="119" height="74" rx="4" fill="#FFE5D9" stroke="#1A1A1A" stroke-width="1" />
+
+            <!-- Circular user frame inside canvas -->
+            <circle cx="68" cy="88" r="22" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.2" />
+            <!-- Avatar head and shoulders -->
+            <circle cx="68" cy="83" r="7" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+            <path d="M52 105 C52 98, 60 94, 68 94 C76 94, 84 98, 84 105 Z" fill="#1A1A1A" stroke="#1A1A1A"
+              stroke-width="0.8" clip-path="url(#avatar-clip)" />
+
+            <!-- Text inside canvas mockup -->
+            <rect x="25" y="116" width="86" height="10" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="0.6" />
+            <line x1="32" y1="121" x2="104" y2="121" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" />
+
+            <!-- Share options buttons -->
+            <rect x="8" y="138" width="55" height="14" rx="2" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="18" y1="145" x2="48" y2="145" stroke="#1A1A1A" stroke-width="1.2" />
+
+            <rect x="72" y="138" width="55" height="14" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="82" y1="145" x2="112" y2="145" stroke="#1A1A1A" stroke-width="1.2" />
+          </g>
+
+          <!-- WhatsApp / Share Overlay Panel (Right offset) -->
+          <g transform="translate(160, 45)">
+            <rect width="65" height="90" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"
+              filter="drop-shadow(4px 4px 0px rgba(26,26,26,0.15))" />
+            <!-- Social Share Icons simulated -->
+            <circle cx="20" cy="25" r="8" fill="#1A1A1A" />
+            <path d="M18 25 L22 25 M20 22 L20 28" stroke="#FFFFFF" stroke-width="1" />
+            <line x1="34" y1="25" x2="52" y2="25" stroke="#1A1A1A" stroke-width="1.5" />
+
+            <circle cx="20" cy="45" r="8" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="34" y1="45" x2="52" y2="45" stroke="#1A1A1A" stroke-width="1.5" />
+
+            <circle cx="20" cy="65" r="8" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8" />
+            <line x1="34" y1="65" x2="52" y2="65" stroke="#1A1A1A" stroke-width="1.5" />
+          </g>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h3 class="project-title">iSupport Campaign</h3>
+        <p class="project-desc">A web Campaign Poster Generator SPA enabling dynamic poster framing with HTML5
+          Canvas, real-time customization, multi-language inputs (Hindi, Gujarati), and direct social sharing.</p>
+        <div class="project-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">Vite</span>
+          <span class="tag">Canvas API</span>
+          <span class="tag">Stateflow</span>
+        </div>
+        <a href="https://isupport-three.vercel.app/templates" target="_blank" class="btn btn-secondary"
+          style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;" (click)="trackClick('iSupport Campaign')">Visit Website ↗</a>
+      </div>
+    </article>
+
+    <!-- Project 03: Boutique E-Commerce Website -->
+    <article class="project-card">
+      <div class="card-mockup-wrapper">
+        <span class="card-number-tag">03</span>
+        <!-- SVG Mockup: Boutique E-Commerce Website -->
+        <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="240" height="180" rx="4" fill="#FBF0F0"/>
+          
+          <!-- Desktop / Web mockup background -->
+          <g transform="translate(25, 20)">
+            <rect width="190" height="140" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+            <rect x="0" y="0" width="190" height="16" rx="4" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1.2"/>
+            <!-- Browser dots -->
+            <circle cx="8" cy="8" r="2.5" fill="#1A1A1A"/>
+            <circle cx="16" cy="8" r="2.5" fill="#1A1A1A"/>
+            <line x1="32" y1="8" x2="90" y2="8" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round"/>
+            
+            <!-- Cart count -->
+            <rect x="160" y="3" width="22" height="10" rx="2" fill="#1A1A1A"/>
+            <circle cx="166" cy="8" r="1.5" fill="#FFFFFF"/>
+            
+            <!-- Main grid items (clothing cards) -->
+            <!-- Grid Card 1 -->
+            <g transform="translate(10, 26)">
+              <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+              <!-- Clothing Icon T-shirt outline -->
+              <path d="M15 45 L20 40 L25 43 L30 40 L35 45 L35 55 L15 55 Z" stroke="#1A1A1A" stroke-width="1" stroke-linejoin="round" fill="#FFFFFF"/>
+              <rect x="15" y="38" width="20" height="18" rx="2" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+              
+              <line x1="6" y1="62" x2="38" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+              <line x1="6" y1="70" x2="25" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+              <!-- Price tag -->
+              <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.5"/>
+            </g>
+
+            <!-- Grid Card 2 -->
+            <g transform="translate(70, 26)">
+              <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+              <!-- Clothing Icon Jacket outline -->
+              <rect x="17" y="38" width="16" height="18" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1"/>
+              <line x1="25" y1="38" x2="25" y2="56" stroke="#1A1A1A" stroke-width="1"/>
+              
+              <line x1="6" y1="62" x2="44" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+              <line x1="6" y1="70" x2="30" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+              <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="0.5"/>
+            </g>
+
+            <!-- Grid Card 3 -->
+            <g transform="translate(130, 26)">
+              <rect width="50" height="85" rx="3" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="1"/>
+              <!-- Dress shape -->
+              <path d="M20 38 L30 38 L34 56 L16 56 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="1"/>
+              <line x1="6" y1="62" x2="40" y2="62" stroke="#1A1A1A" stroke-width="1.5"/>
+              <line x1="6" y1="70" x2="22" y2="70" stroke="#CCCCCC" stroke-width="1.2"/>
+              <rect x="6" y="74" width="20" height="7" rx="1.5" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="0.5"/>
+            </g>
+            
+            <!-- Bottom filter bars -->
+            <rect x="10" y="118" width="170" height="14" rx="2" fill="#FAF6F0" stroke="#1A1A1A" stroke-width="0.8"/>
+            <line x1="16" y1="125" x2="46" y2="125" stroke="#1A1A1A" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="60" y1="125" x2="90" y2="125" stroke="#CCCCCC" stroke-width="1" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h3 class="project-title">Boutique E-Commerce Website</h3>
+        <p class="project-desc">A responsive multi-page e-commerce website featuring a complete product catalog, custom shopping cart, secure authentication system, and order tracking.</p>
+        <div class="project-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Authentication</span>
+        </div>
+        <a href="https://github.com/Harshjii" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;" (click)="trackClick('Boutique E-Commerce Website')">View Code ↗</a>
+      </div>
+    </article>
+
+    <!-- Project 04: Smart Garbage Segregation System -->
+    <article class="project-card">
+      <div class="card-mockup-wrapper">
+        <span class="card-number-tag">04</span>
+        <!-- SVG Mockup: Smart Garbage Segregation System -->
+        <svg viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="240" height="180" rx="4" fill="#DFF0E2"/>
+          <!-- Decorative circuit lines -->
+          <path d="M20 20 H80 V60" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3"/>
+          <path d="M220 160 H160 V120" stroke="#1A1A1A" stroke-width="1" stroke-dasharray="3 3"/>
+          
+          <!-- Left Bin: Organic (Green) -->
+          <g transform="translate(45, 60)">
+            <rect x="0" y="10" width="40" height="60" rx="3" fill="#E2F5EE" stroke="#1A1A1A" stroke-width="1.5"/>
+            <!-- Lid -->
+            <rect x="-4" y="2" width="48" height="8" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+            <rect x="14" y="-4" width="12" height="6" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+            <!-- Recycle Icon (Simplified) -->
+            <path d="M12 35 L20 25 L28 35 Z" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+            <line x1="20" y1="25" x2="20" y2="45" stroke="#1A1A1A" stroke-width="1"/>
+          </g>
+          
+          <!-- Right Bin: Plastic (Blue) -->
+          <g transform="translate(105, 60)">
+            <rect x="0" y="10" width="40" height="60" rx="3" fill="#D2ECF9" stroke="#1A1A1A" stroke-width="1.5"/>
+            <!-- Lid -->
+            <rect x="-4" y="2" width="48" height="8" rx="2" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+            <rect x="14" y="-4" width="12" height="6" rx="1" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5"/>
+            <!-- Recycle Icon (Simplified) -->
+            <circle cx="20" cy="35" r="8" fill="none" stroke="#1A1A1A" stroke-width="1"/>
+            <line x1="15" y1="35" x2="25" y2="35" stroke="#1A1A1A" stroke-width="1"/>
+          </g>
+          
+          <!-- Sensors & Camera mockup overlay (top center) -->
+          <g transform="translate(90, 15)">
+            <rect width="60" height="24" rx="4" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1.5" filter="drop-shadow(2px 2px 0px rgba(0,0,0,0.1))"/>
+            <circle cx="16" cy="12" r="5" fill="#FFC55A" stroke="#1A1A1A" stroke-width="1"/>
+            <circle cx="16" cy="12" r="1.5" fill="#1A1A1A"/>
+            <line x1="34" y1="12" x2="48" y2="12" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
+            <!-- Pulse waves -->
+            <path d="M12 28 C 16 32, 20 32, 24 28" stroke="#1A1A1A" stroke-width="1" fill="none"/>
+          </g>
+          
+          <!-- LCD Feedback Screen (Bottom) -->
+          <g transform="translate(60, 130)">
+            <rect width="120" height="30" rx="3" fill="#1A1A1A"/>
+            <text x="12" y="19" fill="#FFC55A" font-family="Courier New, monospace" font-weight="bold" font-size="10">STATUS: PLASTIC</text>
+            <circle cx="105" cy="15" r="3" fill="#00FF00"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-info">
+        <h3 class="project-title">Smart Garbage Segregation System</h3>
+        <p class="project-desc">An IoT + ML hybrid system classifying waste types in real time using ultrasonic/IR sensors and a trained classifier, achieving 87% accuracy.</p>
+        <div class="project-tags">
+          <span class="tag">Arduino</span>
+          <span class="tag">ESP32</span>
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Sensors</span>
+        </div>
+        <a href="https://github.com/Harshjii" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; width: fit-content; padding: 0.4rem 1rem; font-size: 0.8rem;" (click)="trackClick('Smart Garbage Segregation System')">View Code ↗</a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Center footer button -->
+  <div class="projects-footer">
+    <a href="#projects" class="btn btn-secondary" style="font-family: var(--font-serif); font-weight: 700;">View All
+      Projects</a>
+  </div>
+</section>
