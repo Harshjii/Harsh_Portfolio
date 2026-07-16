@@ -1,10 +1,14 @@
 # Node dependencies
-portfolio/node_modules/
+frontend/node_modules/
+backend/node_modules/
 node_modules/
 
 # Angular build and cache outputs
-portfolio/.angular/
-portfolio/dist/
+frontend/.angular/
+frontend/dist/
+
+# Environment files
+backend/.env
 
 # IDE files
 .vscode/
