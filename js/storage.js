@@ -1,7 +1,9 @@
 /**
  * Storage Manager for managing Backend API communications (replaces LocalStorage).
  */
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1'
+    ? 'https://harsh-portfolio-backend.onrender.com/api' // Replace this with your actual Render API url
+    : 'http://localhost:5000/api';
 
 export const StorageManager = {
     /**

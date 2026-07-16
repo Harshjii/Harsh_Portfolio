@@ -8,13 +8,20 @@ import { Observable } from 'rxjs';
 })
 export class StorageService {
   private isBrowser: boolean;
-  private apiBaseUrl = 'http://localhost:5000/api';
+  private apiBaseUrl: string;
 
   constructor(
     private http: HttpClient,
     @Inject(PLATFORM_ID) private platformId: Object
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
+    
+    // Auto-detect environment to switch between localhost and live render database api
+    if (this.isBrowser && window.location.hostname !== 'localhost') {
+      this.apiBaseUrl = 'https://harsh-portfolio-backend.onrender.com/api'; // Replace this with your actual Render API url
+    } else {
+      this.apiBaseUrl = 'http://localhost:5000/api';
+    }
   }
 
   /**
