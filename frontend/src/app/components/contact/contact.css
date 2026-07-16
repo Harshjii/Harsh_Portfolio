@@ -1,0 +1,109 @@
+.contact-body {
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 600px) {
+  .contact-body {
+    padding: 2rem 1.25rem;
+  }
+}
+
+.contact-text {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 650px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.form-group input,
+.form-group textarea {
+  background-color: transparent;
+  border: var(--border-width) solid var(--border-color);
+  padding: 0.85rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a0a0a0;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: #FFFFFF;
+  box-shadow: 4px 4px 0px rgba(26, 26, 26, 0.1);
+}
+
+.submit-btn {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  border: var(--border-width) solid var(--border-color);
+  padding: 0.85rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: var(--accent-yellow);
+  color: var(--text-primary);
+  box-shadow: 4px 4px 0px rgba(26, 26, 26, 0.15);
+  transform: translate(-2px, -2px);
+}
+
+.submit-btn:active {
+  transform: translate(0, 0);
+  box-shadow: none;
+}
+
+.contact-actions {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+}

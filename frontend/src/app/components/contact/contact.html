@@ -5,12 +5,39 @@
   </div>
   <div class="contact-body">
     <p class="contact-text">
-      I'm currently available for freelance projects, full-time positions, and consulting work.
+      I'm currently available for freelance projects, full-time positions, and consulting work. Feel free to reach out using the form below or via email.
     </p>
-    <div class="contact-actions">
-      <a href="mailto:harsh.gupta2023@glbajajgroup.org" class="btn btn-primary">
+
+    <!-- Contact Form connected to the backend -->
+    <form (submit)="onSubmit($event, nameInput.value, emailInput.value, subjectInput.value, messageInput.value)" class="contact-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="form-name">Name</label>
+          <input type="text" id="form-name" placeholder="John Doe" required #nameInput />
+        </div>
+        <div class="form-group">
+          <label for="form-email">Email</label>
+          <input type="email" id="form-email" placeholder="john@example.com" required #emailInput />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="form-subject">Subject</label>
+        <input type="text" id="form-subject" placeholder="Project Inquiry" required #subjectInput />
+      </div>
+      <div class="form-group">
+        <label for="form-message">Message</label>
+        <textarea id="form-message" rows="5" placeholder="Tell me about your project..." required #messageInput></textarea>
+      </div>
+
+      <button type="submit" class="btn submit-btn">
+        Send Message
+      </button>
+    </form>
+
+    <div class="contact-actions" style="margin-top: 2rem;">
+      <a href="mailto:harsh.gupta2023@glbajajgroup.org" class="btn btn-secondary email-btn">
         <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"
-          style="margin-top:-1px;">
+          style="margin-top:-1px; margin-right: 8px;">
           <path d="M1 1L9 7.5L17 1M1 13H17V1H1V13Z" stroke="currentColor" stroke-width="1.8"
             stroke-linejoin="round" />
         </svg>
