@@ -9,8 +9,7 @@ const connectDB = async () => {
 
   const mongoUri = process.env.MONGO_URI;
   if (!mongoUri) {
-    console.warn('Skipping MongoDB connection: MONGO_URI not defined');
-    return null;
+    throw new Error('Database connection failed: MONGO_URI environment variable is missing on Vercel.');
   }
 
   try {
