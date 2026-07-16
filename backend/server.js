@@ -29,7 +29,12 @@ app.use("/api/metrics", metricsRoutes);
 // Global Error Handler Middleware
 app.use(errorHandler);
 
-// Listen on Port
-app.listen(PORT, () => {
-  console.log(`Server Running on port ${PORT}`);
-});
+// Export app for serverless environments (Vercel)
+module.exports = app;
+
+// Listen on Port only when running locally (not on Vercel)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`Server Running on port ${PORT}`);
+  });
+}
