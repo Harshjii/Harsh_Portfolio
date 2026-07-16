@@ -1,68 +1,96 @@
 /**
- * Storage Manager for managing LocalStorage data.
+ * Storage Manager for managing Backend API communications (replaces LocalStorage).
  */
+const API_BASE_URL = "http://localhost:5000/api";
+
 export const StorageManager = {
     /**
-     * Save contact message to localStorage.
+     * Save contact message to MongoDB via Backend.
      * @param {Object} message - The message details.
-     * @returns {boolean} Success status.
+     * @returns {Promise<boolean>} Success status.
      */
-    saveMessage(message) {
+    async saveMessage(message) {
         try {
-            const messages = this.getMessages();
-            messages.push({
-                ...message,
-                timestamp: new Date().toISOString()
+            const response = await fetch(`${API_BASE_URL}/contact`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: message.name,
+                    email: message.email,
+                    subject: message.subject || "Contact Form Submission",
+                    message: message.message
+                })
             });
-            localStorage.setItem("portfolio_contact_messages", JSON.stringify(messages));
-            return true;
+
+            const data = await response.json();
+            return data.success;
         } catch (e) {
-            console.error("Error saving message to localStorage:", e);
+            console.error("Error saving message to database:", e);
             return false;
         }
     },
 
     /**
-     * Retrieve all saved messages from localStorage.
-     * @returns {Array} List of saved messages.
+     * Retrieve all saved messages from MongoDB via Backend.
+     * @returns {Promise<Array>} List of saved messages.
      */
-    getMessages() {
+    async getMessages() {
         try {
-            const data = localStorage.getItem("portfolio_contact_messages");
-            return data ? JSON.parse(data) : [];
+            const response = await fetch(`${API_BASE_URL}/contact`);
+            const data = await response.json();
+            return data.success ? data.data : [];
         } catch (e) {
-            console.error("Error reading messages from localStorage:", e);
+            console.error("Error reading messages from backend:", e);
             return [];
         }
     },
 
     /**
-     * Increment click count for a specific project.
+     * Increment click count for a specific project via Backend.
      * @param {string} projectId - The unique name of the project.
-     * @returns {number} Updated click count.
+     * @returns {Promise<boolean>} Success status.
      */
-    trackProjectClick(projectId) {
+    async trackProjectClick(projectId) {
         try {
-            const clicks = this.getProjectClicks();
-            clicks[projectId] = (clicks[projectId] || 0) + 1;
-            localStorage.setItem("portfolio_project_clicks", JSON.stringify(clicks));
-            return clicks[projectId];
+            const response = await fetch(`${API_BASE_URL}/metrics/click`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    projectName: projectId
+                })
+            });
+
+            const data = await response.json();
+            return data.success;
         } catch (e) {
-            console.error("Error tracking project click in localStorage:", e);
-            return 0;
+            console.error("Error tracking project click in backend:", e);
+            return false;
         }
     },
 
     /**
-     * Retrieve all project click metrics.
-     * @returns {Object} Project click counts map.
+     * Retrieve all project click metrics from Backend.
+     * @returns {Promise<Object>} Project click counts map.
      */
-    getProjectClicks() {
+    async getProjectClicks() {
         try {
-            const data = localStorage.getItem("portfolio_project_clicks");
-            return data ? JSON.parse(data) : {};
+            const response = await fetch(`${API_BASE_URL}/metrics/clicks`);
+            const data = await response.json();
+            if (data.success && data.data) {
+                // Transform data array into a map key-value matching the original format
+                const clicksMap = {};
+                data.data.forEach(item => {
+                    clicksMap[item.projectName] = item.count;
+                });
+                return clicksMap;
+            }
+            return {};
         } catch (e) {
-            console.error("Error reading project clicks from localStorage:", e);
+            console.error("Error reading project clicks from backend:", e);
             return {};
         }
     }

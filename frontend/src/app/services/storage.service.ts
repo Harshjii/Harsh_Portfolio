@@ -1,82 +1,53 @@
 import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class StorageService {
   private isBrowser: boolean;
+  private apiBaseUrl = 'http://localhost:5000/api';
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
   }
 
   /**
-   * Save contact message to localStorage.
-   * @param message - The message details containing name, email, and body.
-   * @returns Success status.
+   * Save contact message to MongoDB via Backend API.
+   * @param message - The message details.
+   * @returns Observable.
    */
-  saveMessage(message: { name: string; email: string; message: string }): boolean {
-    if (!this.isBrowser) return false;
-    try {
-      const messages = this.getMessages();
-      messages.push({
-        ...message,
-        timestamp: new Date().toISOString()
-      });
-      localStorage.setItem("portfolio_contact_messages", JSON.stringify(messages));
-      return true;
-    } catch (e) {
-      console.error("Error saving message to localStorage:", e);
-      return false;
-    }
+  saveMessage(message: { name: string; email: string; message: string }): Observable<any> {
+    return this.http.post(`${this.apiBaseUrl}/contact`, message);
   }
 
   /**
-   * Retrieve all saved messages from localStorage.
-   * @returns List of saved messages.
-   */
-  getMessages(): any[] {
-    if (!this.isBrowser) return [];
-    try {
-      const data = localStorage.getItem("portfolio_contact_messages");
-      return data ? JSON.parse(data) : [];
-    } catch (e) {
-      console.error("Error reading messages from localStorage:", e);
-      return [];
-    }
-  }
-
-  /**
-   * Increment and track click count for a project.
+   * Increment and track click count for a project via Backend API.
    * @param projectId - The project name or ID.
-   * @returns Updated click count.
+   * @returns Observable.
    */
-  trackProjectClick(projectId: string): number {
-    if (!this.isBrowser) return 0;
-    try {
-      const clicks = this.getProjectClicks();
-      clicks[projectId] = (clicks[projectId] || 0) + 1;
-      localStorage.setItem("portfolio_project_clicks", JSON.stringify(clicks));
-      return clicks[projectId];
-    } catch (e) {
-      console.error("Error tracking project click in localStorage:", e);
-      return 0;
-    }
+  trackProjectClick(projectId: string): Observable<any> {
+    return this.http.post(`${this.apiBaseUrl}/metrics/click`, { projectName: projectId });
   }
 
   /**
    * Retrieve all project click metrics.
-   * @returns Map of project click counts.
+   * @returns Observable.
    */
-  getProjectClicks(): any {
-    if (!this.isBrowser) return {};
-    try {
-      const data = localStorage.getItem("portfolio_project_clicks");
-      return data ? JSON.parse(data) : {};
-    } catch (e) {
-      console.error("Error reading project clicks from localStorage:", e);
-      return {};
-    }
+  getProjectClicks(): Observable<any> {
+    return this.http.get(`${this.apiBaseUrl}/metrics/clicks`);
+  }
+
+  /**
+   * Retrieve all projects from Backend API.
+   * @returns Observable.
+   */
+  getProjects(): Observable<any> {
+    return this.http.get(`${this.apiBaseUrl}/projects`);
   }
 }

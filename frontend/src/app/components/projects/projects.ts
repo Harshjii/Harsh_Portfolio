@@ -11,7 +11,13 @@ export class Projects {
   constructor(private storageService: StorageService) {}
 
   trackClick(projectName: string) {
-    const count = this.storageService.trackProjectClick(projectName);
-    console.log(`[Metrics] "${projectName}" clicked. Total clicks registered: ${count}`);
+    this.storageService.trackProjectClick(projectName).subscribe({
+      next: (res: any) => {
+        console.log(`[Metrics] "${projectName}" click recorded successfully:`, res);
+      },
+      error: (err) => {
+        console.error(`[Metrics] Error tracking click for "${projectName}":`, err);
+      }
+    });
   }
 }

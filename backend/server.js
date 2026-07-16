@@ -1,35 +1,35 @@
-const express = require('express');
-const cors = require('cors');
-const mongoose = require('mongoose');
-require('dotenv').config();
+const express = require("express");
+const cors = require("cors");
+require("dotenv").config();
+const connectDB = require("./config/db");
+const contactRoutes = require("./routes/contactRoutes");
+const metricsRoutes = require("./routes/metricRoutes");
+const { errorHandler } = require("./middleware/errorHandler");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Connect to MongoDB Atlas
+connectDB();
+
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Health check route
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'MEAN backend is running!' });
+// Health Check Route
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok", message: "Server is running!" });
 });
 
-// Future API Endpoints:
-// app.post('/api/contact', (req, res) => { ... });
-// app.post('/api/metrics/clicks', (req, res) => { ... });
+// API Routes
+app.use("/api/contact", contactRoutes);
+app.use("/api/metrics", metricsRoutes);
 
-// Mongoose Connection placeholder (will connect when MONGO_URI is set in .env)
-const mongoUri = process.env.MONGO_URI;
-if (mongoUri) {
-  mongoose.connect(mongoUri)
-    .then(() => console.log('Connected to MongoDB Database'))
-    .catch((err) => console.error('MongoDB connection error:', err));
-} else {
-  console.log('Skipping MongoDB connection: MONGO_URI not set in environment.');
-}
+// Global Error Handler Middleware
+app.use(errorHandler);
 
-// Server listen
+// Listen on Port
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server Running on port ${PORT}`);
 });

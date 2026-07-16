@@ -139,7 +139,7 @@ export function initResumeDownload() {
 export function initContactForm(storageManager) {
     const form = document.querySelector("form");
     if (form) {
-        form.addEventListener("submit", (e) => {
+        form.addEventListener("submit", async (e) => {
             e.preventDefault();
 
             const nameEl = document.getElementById("name");
@@ -156,11 +156,17 @@ export function initContactForm(storageManager) {
             }
 
             if (storageManager) {
-                storageManager.saveMessage({ name, email, message });
+                const success = await storageManager.saveMessage({ name, email, message });
+                if (success) {
+                    alert("Message Sent Successfully!");
+                    form.reset();
+                } else {
+                    alert("Failed to send message. Please check if backend is running.");
+                }
+            } else {
+                alert("Message Sent Successfully!");
+                form.reset();
             }
-
-            alert("Message Sent Successfully!");
-            form.reset();
         });
     }
 }
@@ -203,9 +209,9 @@ export function initProjectTracker(storageManager) {
         // Track click when a link inside a project card is clicked
         const links = card.querySelectorAll("a");
         links.forEach(link => {
-            link.addEventListener("click", () => {
-                const count = storageManager.trackProjectClick(title);
-                console.log(`[Metrics] "${title}" clicked. Total clicks registered: ${count}`);
+            link.addEventListener("click", async () => {
+                const success = await storageManager.trackProjectClick(title);
+                console.log(`[Metrics] "${title}" click logged to backend: ${success}`);
             });
         });
     });
